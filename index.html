@@ -7,7 +7,6 @@
   <style>
     :root {
       color-scheme: light dark;
-      /* Tema claro, valores padrão */
       --bg: #f9fafb;
       --bg-soft: #e5e7eb;
       --card: #ffffff;
@@ -134,6 +133,22 @@
       background: rgba(148, 163, 184, 0.08);
     }
 
+    .reading-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .reading-pill {
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(148, 163, 184, 0.06);
+    }
+
     hr.divider {
       border: none;
       border-top: 1px solid var(--border);
@@ -157,7 +172,6 @@
       border-radius: var(--radius-lg);
       border: 1px solid rgba(52, 211, 153, 0.45);
       padding: 18px;
-      /* índice não fixo, sem position sticky */
     }
 
     .toc-title {
@@ -346,6 +360,27 @@
     a {
       color: var(--accent);
     }
+
+    .site-footer {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #6b7280;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .site-footer span {
+      display: block;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      body {
+        transition: none;
+      }
+      .theme-toggle {
+        transition: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -363,12 +398,18 @@
         </div>
         <h1>Riscos e Benefícios em Pesquisas com Seres Humanos</h1>
         <p class="subtitle">
-          Ebook sintético, minimalista e orientado às normas brasileiras para apoiar a elaboração da seção de riscos e benefícios em protocolos, projetos e termos de consentimento.
+          Ebook é orientado às normas brasileiras para apoiar a elaboração da seção de riscos e benefícios em projetos de pesquisa e termos de consentimento.
         </p>
+
+        <div class="reading-meta">
+          <div class="reading-pill">Tempo estimado de leitura, cerca de 18 minutos</div>
+          <div class="reading-pill">Extensão aproximada, 3.800 palavras</div>
+        </div>
+
         <div class="meta-row">
-          <div class="meta-pill">Baseado nas Resoluções CNS 466, 2012, e 510, 2016</div>
-          <div class="meta-pill">Foco em Sistema CEP e Conep</div>
-          <div class="meta-pill">Uso livre em projetos e TCLE</div>
+          <div class="meta-pill">Baseado nas Resoluções CNS 466/2012, e 510/2016</div>
+          <div class="meta-pill">Foco em Sistema CEP/Conep</div>
+          <div class="meta-pill">Uso acadêmico e regulatório</div>
         </div>
       </header>
 
@@ -845,13 +886,20 @@
             <p>
               A ferramenta não substitui a responsabilidade ética do pesquisador, nem a avaliação do Comitê de Ética em Pesquisa, mas funciona como um apoio prático para qualificar a escrita, reduzir pendências e fortalecer a aderência às resoluções vigentes. Recomenda se sempre evitar o envio de dados pessoais ou identificáveis de participantes, mantendo a descrição dos protocolos em formato anonimizado.
             </p>
-          </section>
 
-          <footer>
-            Ebook de apoio à redação de riscos e benefícios em pesquisas com seres humanos, uso acadêmico e regulatório.
-          </footer>
+            <footer>
+              
+            </footer>
+          </section>
         </main>
       </div>
+    </div>
+
+    <div class="site-footer">
+      <span>Ebook de apoio à redação de riscos e benefícios em pesquisas com seres humanos, uso acadêmico e regulatório.<br>
+Disciplina de Pesquisa em Ciências da Saúde, UNCISAL, 2025</span>
+      <span>Elaboração e curadoria de conteúdo, Aldemr Araujo e equipe de pesquisa</span>
+      <span>Uso educacional, não comercial, recomenda se citação da fonte ao utilizar trechos deste material</span>
     </div>
   </div>
 
