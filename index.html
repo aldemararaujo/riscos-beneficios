@@ -157,8 +157,7 @@
       border-radius: var(--radius-lg);
       border: 1px solid rgba(52, 211, 153, 0.45);
       padding: 18px;
-      position: sticky;
-      top: 24px;
+      /* índice não fixo, sem position sticky */
     }
 
     .toc-title {
@@ -343,6 +342,10 @@
     .theme-toggle-emoji {
       font-size: 14px;
     }
+
+    a {
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
@@ -373,7 +376,7 @@
 
       <div class="layout">
         <aside class="toc-card">
-          <div class="toc-title">Sumário</div>
+          <div class="toc-title">Índice</div>
           <ul class="toc-list">
             <li><a href="#intro">1. Introdução</a></li>
             <li><a href="#fundamentos">2. Fundamentos éticos</a></li>
@@ -385,6 +388,8 @@
             <li><a href="#lista-riscos">8. Lista agrupada de riscos</a></li>
             <li><a href="#sigilo-priv-conf">9. Privacidade, sigilo e confidencialidade</a></li>
             <li><a href="#fluxograma">10. Fluxograma informacional</a></li>
+            <li><a href="#consideracoes">11. Considerações finais</a></li>
+            <li><a href="#gpt-personalizado">12. GPT Personalizado</a></li>
           </ul>
         </aside>
 
@@ -800,11 +805,51 @@
               <strong>Passo 7. Registro no protocolo e no TCLE</strong><br />
               Garantir que todos os riscos informacionais e as respectivas medidas de proteção estejam descritos na seção de riscos do projeto e no TCLE.
             </div>
-
-            <footer>
-              Ebook de apoio à redação de riscos e benefícios em pesquisas com seres humanos, uso acadêmico e regulatório.
-            </footer>
           </section>
+
+          <!-- 11. Considerações finais -->
+          <section id="consideracoes">
+            <span class="pill">11. Considerações finais</span>
+            <h2>11. Considerações finais</h2>
+            <p>
+              A descrição adequada dos riscos e benefícios é mais do que um requisito técnico, é uma expressão do compromisso ético e humanista do pesquisador. Essa seção revela o equilíbrio entre o avanço científico e a proteção da dignidade humana, refletindo o cumprimento do princípio da responsabilidade social da ciência.
+            </p>
+            <p>
+              Ao apresentar riscos e benefícios de maneira clara, fundamentada e proporcional, o pesquisador fortalece a credibilidade de seu projeto, facilita a aprovação ética e contribui para uma cultura de pesquisa responsável e transparente.
+            </p>
+            <p>
+              A compreensão e aplicação rigorosa desses conceitos são, portanto, indispensáveis para qualquer investigação que se pretenda eticamente legítima e socialmente relevante.
+            </p>
+          </section>
+
+          <!-- 12. GPT Personalizado -->
+          <section id="gpt-personalizado">
+            <span class="pill">12. GPT Personalizado</span>
+            <h2>12. GPT Personalizado</h2>
+            <p>
+              Além das orientações conceituais e dos modelos de texto apresentados neste ebook, os pesquisadores podem contar com o apoio de uma ferramenta gratuita de inteligência artificial, o GPT personalizado voltado para riscos e benefícios em pesquisa clínica, disponível em
+              <a href="https://bit.ly/rb-geral" target="_blank" rel="noopener noreferrer">https://bit.ly/rb-geral</a>.
+            </p>
+            <p>
+              Esse recurso foi pensado para auxiliar na identificação sistemática de riscos físicos, psicológicos, sociais, informacionais e operacionais, bem como na redação estruturada de seções de riscos e benefícios em projetos de pesquisa, relatórios para o Sistema CEP e Conep e termos de consentimento livre e esclarecido.
+            </p>
+            <p>
+              O GPT personalizado pode, por exemplo, ajudar o pesquisador a:
+            </p>
+            <ul>
+              <li>Listar riscos potenciais associados a um protocolo de pesquisa clínica ou observacional.</li>
+              <li>Sugerir medidas de mitigação compatíveis com as normas éticas brasileiras.</li>
+              <li>Diferenciar claramente benefícios diretos e indiretos para participantes e sociedade.</li>
+              <li>Adaptar a linguagem técnica para versões dirigidas a comitês de ética e para versões em linguagem acessível para o TCLE.</li>
+            </ul>
+            <p>
+              A ferramenta não substitui a responsabilidade ética do pesquisador, nem a avaliação do Comitê de Ética em Pesquisa, mas funciona como um apoio prático para qualificar a escrita, reduzir pendências e fortalecer a aderência às resoluções vigentes. Recomenda se sempre evitar o envio de dados pessoais ou identificáveis de participantes, mantendo a descrição dos protocolos em formato anonimizado.
+            </p>
+          </section>
+
+          <footer>
+            Ebook de apoio à redação de riscos e benefícios em pesquisas com seres humanos, uso acadêmico e regulatório.
+          </footer>
         </main>
       </div>
     </div>
@@ -846,4 +891,3 @@
   </script>
 </body>
 </html>
-[
